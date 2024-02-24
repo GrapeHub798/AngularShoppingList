@@ -1,0 +1,12 @@
+.itemIsChecked {
+  color: gray;
+}
+
+.itemIsChecked .text {
+  text-decoration: line-through;
+}
+
+
+
+
+

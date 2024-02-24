@@ -1,0 +1,13 @@
+<div class="container col-md-4">
+  <div class="row text-center">
+    <div class="col fw-bold">
+      My Shopping List
+    </div>
+  </div>
+  <div class="row mt-4">
+    <app-search-input (addItemToParent)="addItemToList($event)"/>
+  </div>
+  <div class="row mt-2">
+    <app-item-list [items]="shippingList" (deleteItemFromParent)="removeItemFromList($event)" (toggleItemOnParent)="toggleItem($event)"/>
+  </div>
+</div>

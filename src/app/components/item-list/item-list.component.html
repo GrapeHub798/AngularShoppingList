@@ -1,0 +1,5 @@
+<div class="col" *ngIf="items.length > 0">
+  <ul *ngFor="let item of items">
+    <app-item [item]="item" (deleteItemFromParent)="deleteItem($event)" (toggleItemOnParent)="toggleItem($event)"/>
+  </ul>
+</div>
